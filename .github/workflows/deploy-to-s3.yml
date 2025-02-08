@@ -37,7 +37,7 @@ jobs:
       - name: Trigger Lambda function
         run: |
           aws lambda invoke \
-            --function-name my-app-lambda-function \
+            --function-name ganbarimasu \
             --region ${{ secrets.AWS_REGION }} \
             --payload '{}' \
             response.json
